@@ -15,6 +15,15 @@ body {
     background-image: url(https://api.boxmoe.com/random.php);
 }
 
+@media screen and (max-width: 1080px) {
+    body {
+        background-image: url(../images/ameng.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 -50px;
+    }
+}
+
 .root {
 }
 
