@@ -13,6 +13,8 @@ body {
     font-family: "btfFont" !important;
     background-color: #f0f2f5;
     background-image: url(https://api.boxmoe.com/random.php);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 @media screen and (max-width: 1080px) {
