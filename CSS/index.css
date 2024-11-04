@@ -125,8 +125,14 @@ body {
 .root > .content > .core > .countdown > div {
     width: 300px;
     height:400px;
-    background-color: #ced6e0;
+    background-color: #f1f2f6;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 7px;
+}
+
+
+.root > .content > .core > .countdown > div:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
