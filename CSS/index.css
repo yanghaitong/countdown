@@ -1,0 +1,156 @@
+/*字体，然后在不同的部位使用不同的字体*/
+@font-face {
+    font-family: btfFont;
+    src: url(../static/fontGood.woff2) format('woff2')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "btfFont" !important;
+    background-color: #f0f2f5;
+}
+
+
+.root > .nav {
+    background-color: #FFF;
+    height: 50px;
+}
+
+.root > .nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.root > .nav ul li {
+    float: left;
+    list-style: none;
+    line-height: 50px;
+}
+
+
+.root > .nav > ul > .time > .next {
+    color: #70a1ff;
+}
+
+.root > .nav > .title_content {
+    /*text-align: center;*/
+    /*line-height: 50px;*/
+}
+
+.root > .nav > ul > .title_content > span {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.root > .content > .core > .title_time {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #FFF;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.root > .nav > ul > .menu > .drop {
+    position: relative;
+}
+
+.root > .nav > ul > .menu > .drop > a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.root > .nav > ul > .menu > .drop > .drop_box {
+    width: 90px;
+    /*height: 40px;*/
+    background-color: #FFF;
+    position: absolute;
+    /*top: 35px;*/
+    left: -27px;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: none;
+}
+
+.root > .nav > ul > .menu > .drop:hover > .drop_box {
+    display: block;
+}
+
+
+.root > .nav > ul > .menu > .drop > .drop_box > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.root > .nav > ul > .menu > .drop > .drop_box > ul li {
+    float: none;
+    line-height: 40px;
+}
+
+.root > .nav > ul > .menu > .drop > .drop_box > ul > li:hover{
+    background-color: #70a1ff;
+}
+
+
+
+.root > .content > .core > .title_time .current {
+    font-weight: 300;
+    font-size: 20px;
+    text-shadow: rgba(62,66,66,0.68) -8px -4px 37px;
+}
+
+.root > .content > .core > .countdown {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #FFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/**/
+.root > .content > .core > .countdown {
+    display: flex;
+    justify-content: space-around;
+    padding: 13px 10px;
+}
+
+.root > .content > .core > .countdown > div {
+    width: 300px;
+    height:400px;
+    background-color: #ced6e0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.root > .content > .core > .countdown > div p {
+    font-size: 70px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    line-height: 400px;
+}
+
+.root > .content > .core > .countdown > i {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/**
+    模态框
+ */
+.root > .Modal > .Modal_box {
+    width: 100px;
+    height: 300px;
+    background-color: #70a1ff;
+
+}
