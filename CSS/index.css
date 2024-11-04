@@ -154,3 +154,21 @@ body {
     background-color: #70a1ff;
 
 }
+
+/**
+    footer
+ */
+.root > .footer {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+.root > .footer > .copyright > span i {
+    color: #70a1ff;
+}
