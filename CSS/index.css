@@ -12,8 +12,11 @@
 body {
     font-family: "btfFont" !important;
     background-color: #f0f2f5;
+    background-image: url(https://api.boxmoe.com/random.php);
 }
 
+.root {
+}
 
 .root > .nav {
     background-color: #FFF;
@@ -109,7 +112,8 @@ body {
 .root > .content > .core > .countdown {
     width: 90%;
     margin: 30px auto;
-    background-color: #FFF;
+    /*background-color: #FFF;*/
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
     padding: 10px;
@@ -125,7 +129,7 @@ body {
 .root > .content > .core > .countdown > div {
     width: 300px;
     height:400px;
-    background-color: #f1f2f6;
+    /*background-color: #f1f2f6;*/
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 7px;
 }
