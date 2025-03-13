@@ -4,6 +4,11 @@
     src: url(../static/fontGood.woff2) format('woff2')
 }
 
+@font-face {
+    font-family: AiDianF;
+    src: url(../static/AiDianF.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +17,7 @@
 body {
     font-family: "btfFont" !important;
     background-color: #f0f2f5;
+    /* 背景图片api */
     background-image: url(https://api.boxmoe.com/random.php);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -24,9 +30,6 @@ body {
         background-size: 100%;
         background-position: 0 -50px;
     }
-}
-
-.root {
 }
 
 .root > .nav {
@@ -70,6 +73,12 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
+
+.root > .nav > ul > .menu {
+    display: none;
+}
+
 .root > .nav > ul > .menu > .drop {
     position: relative;
 }
@@ -108,16 +117,21 @@ body {
     line-height: 40px;
 }
 
-.root > .nav > ul > .menu > .drop > .drop_box > ul > li:hover{
-    background-color: #70a1ff;
+a {
+    text-decoration: none;
+    color: #000;
 }
 
+.root > .nav > ul > .menu > .drop > .drop_box > ul > li > a:hover {
+    /*background-color: #70a1ff;*/
+    color: #70a1ff;
+}
 
 
 .root > .content > .core > .title_time .current {
     font-weight: 300;
     font-size: 20px;
-    text-shadow: rgba(62,66,66,0.68) -8px -4px 37px;
+    text-shadow: rgba(62, 66, 66, 0.68) -8px -4px 37px;
 }
 
 .root > .content > .core > .countdown {
@@ -139,10 +153,11 @@ body {
 
 .root > .content > .core > .countdown > div {
     width: 300px;
-    height:400px;
+    height: 400px;
     /*background-color: #f1f2f6;*/
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 7px;
+    font-family: AiDianF !important;
 }
 
 
@@ -169,11 +184,61 @@ body {
 /**
     模态框
  */
-.root > .Modal > .Modal_box {
-    width: 100px;
-    height: 300px;
-    background-color: #70a1ff;
+.root > .Modal {
+    z-index: 9999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: none;
+}
 
+.root > .Modal > .Modal_box {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /*background-color: #dfe4ea;*/
+    background-image: linear-gradient(103.3deg, rgb(252, 225, 208) 30%, rgb(255, 173, 214) 55.7%, rgb(162, 186, 245) 81.8%);
+    text-align: center;
+    padding: 20px;
+}
+
+.root > .Modal > .Modal_box .info {
+    /*background-color: #70a1ff;*/
+    width: 280px;
+    text-align: right;
+}
+
+.root > .Modal > .Modal_box .info > div {
+    padding: 10px 0;
+}
+
+.root > .Modal > .Modal_box .info > div input {
+    border: 1px solid #1e90ff;
+    height: 25px;
+    padding: 0 2px;
+}
+
+
+.root > .Modal > .Modal_box .info > div input:hover {
+    box-shadow: #1e90ff 0px 2px 8px 0px;
+}
+
+.root > .Modal > .Modal_box .info > div input:focus {
+    outline: none;
+}
+
+.root > .Modal > .Modal_box .info > .btn_info {
+    text-align: center;
+}
+
+.root > .Modal > .Modal_box .info > .btn_info button {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #70a1ff;
+    border-radius: 7px;
 }
 
 /**
