@@ -114,6 +114,11 @@
         </span>
       </div>
     </div>
+          <!-- 音乐 -->
+      <audio id="bgMusic" loop>
+<!--          <source src="static/白允y%20-%20在你的身边.flac" type="audio/mpeg">-->
+          <source src="static/春娇与志明.mp3" type="audio/mpeg">
+      </audio>
   </div>
 
   <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
@@ -121,6 +126,16 @@
   <script src="JavaScript/date.js"></script>
   <script src="JavaScript/bg.js"></script>
   <script src="JavaScript/sakura.js"></script>
-
+  <script>
+      document.addEventListener('click', function() {
+          const bgMusic = document.getElementById('bgMusic');
+          // 尝试播放音乐，并处理可能出现的错误
+          bgMusic.play().catch(function(error) {
+              console.log("自动播放被阻止: ", error);
+          });
+      });
+  </script>
+  
 </body>
+
 </html>
