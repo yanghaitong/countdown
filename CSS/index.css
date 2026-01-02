@@ -182,6 +182,13 @@ a {
 }
 
 /**
+    模态框
+*/
+.root > .Modal {
+    display: none;
+}
+
+/**
     footer
  */
 .root > .footer {
@@ -198,3 +205,4 @@ a {
 .root > .footer > .copyright > span i {
     color: #70a1ff;
 }
+
