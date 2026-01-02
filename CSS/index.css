@@ -17,18 +17,19 @@
 body {
     font-family: "btfFont" !important;
     background-color: #f0f2f5;
-    /* 背景图片api */
-    background-image: url(https://api.boxmoe.com/random.php);
+    /* 背景图片api https://api.boxmoe.com/random.php */
+    background-image: url(https://pic1.imgdb.cn/item/6915abff3203f7be00ff6a42.jpg);
+    background-position: 0 -100px;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 960px) {
     body {
-        background-image: url(../images/ameng.jpg);
+        background-image: url(../images/phone.png);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0 -50px;
+        /*background-position: 0 -50px;*/
     }
 }
 
@@ -73,8 +74,7 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-
-
+/* 下拉菜单 */
 .root > .nav > ul > .menu {
     display: none;
 }
@@ -98,7 +98,7 @@ body {
     left: -27px;
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: none;
+    display:  none;
 }
 
 .root > .nav > ul > .menu > .drop:hover > .drop_box {
@@ -179,66 +179,6 @@ a {
     align-items: center;
     font-weight: 400;
     font-size: 17px;
-}
-
-/**
-    模态框
- */
-.root > .Modal {
-    z-index: 9999;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -150px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    display: none;
-}
-
-.root > .Modal > .Modal_box {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    /*background-color: #dfe4ea;*/
-    background-image: linear-gradient(103.3deg, rgb(252, 225, 208) 30%, rgb(255, 173, 214) 55.7%, rgb(162, 186, 245) 81.8%);
-    text-align: center;
-    padding: 20px;
-}
-
-.root > .Modal > .Modal_box .info {
-    /*background-color: #70a1ff;*/
-    width: 280px;
-    text-align: right;
-}
-
-.root > .Modal > .Modal_box .info > div {
-    padding: 10px 0;
-}
-
-.root > .Modal > .Modal_box .info > div input {
-    border: 1px solid #1e90ff;
-    height: 25px;
-    padding: 0 2px;
-}
-
-
-.root > .Modal > .Modal_box .info > div input:hover {
-    box-shadow: #1e90ff 0px 2px 8px 0px;
-}
-
-.root > .Modal > .Modal_box .info > div input:focus {
-    outline: none;
-}
-
-.root > .Modal > .Modal_box .info > .btn_info {
-    text-align: center;
-}
-
-.root > .Modal > .Modal_box .info > .btn_info button {
-    width: 60px;
-    height: 30px;
-    border: 1px solid #70a1ff;
-    border-radius: 7px;
 }
 
 /**
