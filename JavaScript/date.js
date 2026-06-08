@@ -93,7 +93,7 @@ let countdown = document.querySelector(".countdown")
 next.innerHTML = `今天是${year}年${month}月${day}日`;
 
 
-prompts.innerHTML = "2026 51劳动节";
+prompts.innerHTML = "2026 国庆节";
 
 /**
  * 现在时间的方法
@@ -124,7 +124,7 @@ function countTime() {
     //2、得到指定时间的时间戳
 
     // 目标时间
-    let target_time = "2026-5-1 00:00:00"
+    let target_time = "2026-10-1 00:00:00"
 
     // 输入倒计时截止的时间
     // let last = +new Date("2026-1-1 00:00:00");
@@ -153,7 +153,7 @@ function countTime() {
     if (count <= 0) {
 
         // 时间截止的提示
-        countdown.innerHTML = '2026年除夕到了！'
+        countdown.innerHTML = '2026年国庆节到了！'
     }
 }
 setInterval(countTime, 1000)
