@@ -10,7 +10,6 @@
 </head>
 <body>
   <div class="root">
-    <!-- 模态框 -->
     <div id="modal" class="Modal">
       <div class="Modal_box">
         <div class="title">
@@ -79,26 +78,21 @@
     <div class="content">
       <div class="core">
         <div class="title_time">
-          <!-- tips -->
           <p class="current">现在的时间是0时03分00秒</p>
         </div>
         <div class="countdown">
-          <!-- 天 -->
           <div class="days">
             <p id="sky" style="color: #f50514">10</p>
           </div>
           <i>天</i>
-          <!-- 时 -->
           <div class="hours">
             <p id="hour">10</p>
           </div>
           <i>:</i>
-          <!-- 分 -->
           <div class="minutes">
             <p id="divide">10</p>
           </div>
           <i>:</i>
-          <!-- 秒 -->
           <div class="seconds">
             <p id="second">10</p>
           </div>
@@ -114,7 +108,6 @@
         </span>
       </div>
     </div>
-          <!-- 音乐 -->
       <audio id="bgMusic" loop>
 <!--          <source src="static/白允y%20-%20在你的身边.flac" type="audio/mpeg">-->
           <source src="static/春娇与志明.mp3" type="audio/mpeg">
@@ -129,7 +122,6 @@
   <script>
       document.addEventListener('click', function() {
           const bgMusic = document.getElementById('bgMusic');
-          // 尝试播放音乐，并处理可能出现的错误
           bgMusic.play().catch(function(error) {
               console.log("自动播放被阻止: ", error);
           });
